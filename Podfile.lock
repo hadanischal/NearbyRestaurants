@@ -1,7 +1,10 @@
 PODS:
-  - Cuckoo (1.3.2):
-    - Cuckoo/Swift (= 1.3.2)
-  - Cuckoo/Swift (1.3.2)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
   - Nimble (8.1.1)
   - Pecker (0.3.0)
   - PKHUD (5.3.0)
@@ -20,7 +23,8 @@ PODS:
   - SwiftLint (0.39.2)
 
 DEPENDENCIES:
-  - Cuckoo (~> 1.3.2)
+  - Cuckoo (~> 1.4.1)
+  - Kingfisher (~> 5.14.1)
   - Nimble (~> 8.1.1)
   - Pecker
   - PKHUD (~> 5.0)
@@ -35,6 +39,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Cuckoo
+    - Kingfisher
     - Nimble
     - Pecker
     - PKHUD
@@ -48,7 +53,8 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Cuckoo: 57f71c6616b6b08cd9fe27f803da056fb619ff3e
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
   Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
   Pecker: 7e21bfee0b2d26a1f6b7f120c7c4ac675975a614
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
@@ -61,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftGen: 77e88c8609381660cc1084c5ba8e1dc6065de692
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 4172106879834aa90605b97ba67d3321e34495ba
+PODFILE CHECKSUM: 0b0573c1d59a8d85a2a80a9d6a4589dfaf6398f0
 
 COCOAPODS: 1.9.1
