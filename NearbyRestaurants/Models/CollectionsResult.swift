@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - CollectionsResult
 
-struct CollectionsResult: Codable {
+struct CollectionsResult: Codable, Equatable {
     let collections: [CollectionElement]
     let hasMore: Int
     let shareUrl: String
@@ -21,13 +21,17 @@ struct CollectionsResult: Codable {
 
 // MARK: - CollectionElement
 
-struct CollectionElement: Codable {
-    let collection: Restaurant
+struct CollectionElement: Codable, Equatable {
+    let restaurant: Restaurant
+
+    enum CodingKeys: String, CodingKey {
+         case restaurant = "collection"
+     }
 }
 
 // MARK: - CollectionCollection
 
-struct Restaurant: Codable {
+struct Restaurant: Codable, Equatable {
     let collectionId, resCount: Int
     let imageUrl: String
     let url: String

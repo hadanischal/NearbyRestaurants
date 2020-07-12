@@ -39,8 +39,7 @@ extension URLRequest {
     static func loadURL<T>(resource: Resource<T>) -> URL? {
         if
             let parameters = resource.parameter,
-            let urlComponents = URLComponents(url: resource.url, resolvingAgainstBaseURL: false)
-        {
+            let urlComponents = URLComponents(url: resource.url, resolvingAgainstBaseURL: false) {
             var components = urlComponents
             components.queryItems = parameters.map { (arg) -> URLQueryItem in
                 let (key, value) = arg

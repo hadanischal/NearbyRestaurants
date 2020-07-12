@@ -10,20 +10,20 @@ import Foundation
 
 // MARK: - RestaurantResult
 
-struct RestaurantResult: Codable {
+struct RestaurantResult: Codable, Equatable {
 //    let resultsFound, resultsStart, resultsShown: Int
     let restaurants: [RestaurantElement]
 }
 
 // MARK: - RestaurantElement
 
-struct RestaurantElement: Codable {
+struct RestaurantElement: Codable, Equatable {
     let restaurant: RestaurantModel
 }
 
 // MARK: - RestaurantRestaurant
 
-struct RestaurantModel: Codable {
+struct RestaurantModel: Codable, Equatable {
     let apikey, id, name: String
     let location: Location
     let switchToOrderMenu: Int
