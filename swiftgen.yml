@@ -1,0 +1,49 @@
+#run 'swiftgen' in app project (WORKSPACE/App) and it will update the UIColors.swift file
+#Update colors using StandardColors.txt
+
+xcassets:
+  inputs:
+    - ./NearbyRestaurants/Resources/Assets/
+  outputs:
+    - templateName: swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/Assets/Assets.swift
+
+fonts:
+  inputs:
+    - ./NearbyRestaurants/Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/Fonts/GeneratedFonts.swift
+      
+ib:
+  inputs:
+    - ./NearbyRestaurants/Base.lproj/LaunchScreen.storyboard
+    - ./NearbyRestaurants/Base.lproj/Main.storyboard
+
+  outputs:
+    - templateName: scenes-swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/Storyboards/StoryboardScenes.swift
+    - templateName: segues-swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/Storyboards/StoryboardSegues.swift
+
+colors:
+  inputs:
+    - ./NearbyRestaurants/Resources/Colors/StandardColors.txt
+  outputs:
+    templateName: swift4
+    output: ./NearbyRestaurants/Generated/SwiftGen/Colors/GeneratedColors.swift
+    
+    
+strings:
+  inputs:
+    - ./NearbyRestaurants/Resources/Strings/
+  outputs:
+    - templateName: structured-swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/Strings/GeneratedStrings.swift
+
+json:
+  inputs:
+    - ./NearbyRestaurants/Resources/JsonFile/
+  outputs:
+    - templateName: runtime-swift4
+      output: ./NearbyRestaurants/Generated/SwiftGen/JSONFiles/GeneratedJSONFiles.swift

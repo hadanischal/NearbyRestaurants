@@ -10,7 +10,6 @@ target 'NearbyRestaurants' do
   pod 'RxCocoa', '~> 5.1.1'
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.0'
-  pod 'Pecker'
   pod 'PKHUD', '~> 5.0'
   pod 'Kingfisher', '~> 5.14.1'
   pod 'ReachabilitySwift'

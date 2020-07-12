@@ -78,3 +78,9 @@ custom_rules:
         regex: 'NSLocalizedString'
         message: "Use L10n.key instead"
         severity: error
+
+identifier_name:
+    excluded: # excluded via string array
+      - id
+      - URL
+      - GlobalAPIKey

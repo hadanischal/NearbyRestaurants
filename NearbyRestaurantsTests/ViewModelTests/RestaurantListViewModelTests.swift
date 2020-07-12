@@ -5,6 +5,7 @@
 //  Created by Nischal Hada on 11/7/20.
 //  Copyright © 2020 Nischal Hada. All rights reserved.
 //
+//swiftlint:disable force_cast
 
 import Cuckoo
 @testable import NearbyRestaurants

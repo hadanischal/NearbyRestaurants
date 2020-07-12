@@ -654,6 +654,8 @@
 				AF53D4AE24B94255008FA6E5 /* Frameworks */,
 				AF53D4AF24B94255008FA6E5 /* Resources */,
 				F6ACD37796E9CADADDD8A5C3 /* [CP] Embed Pods Frameworks */,
+				AFDB723E24BBC833000302CB /* Swiftlint Script */,
+				AFDB723F24BBC962000302CB /* SwiftGen Script */,
 			);
 			buildRules = (
 			);
@@ -673,6 +675,7 @@
 				AF53D4C424B94256008FA6E5 /* Frameworks */,
 				AF53D4C524B94256008FA6E5 /* Resources */,
 				AF515697207CB8CC542E915D /* [CP] Embed Pods Frameworks */,
+				AFDB724024BBC9F2000302CB /* Cuckoo Script */,
 			);
 			buildRules = (
 			);
@@ -873,6 +876,60 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NearbyRestaurantsTests/Pods-NearbyRestaurantsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AFDB723E24BBC833000302CB /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		AFDB723F24BBC962000302CB /* SwiftGen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		AFDB724024BBC9F2000302CB /* Cuckoo Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Cuckoo Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/NetworkLayer/Core/WebServiceProtocol.swift\" \\\n\"${INPUT_DIR}/NetworkLayer/Services/RestaurantNetworkHandler.swift\" \\\n\"${INPUT_DIR}/ViewModel/RestaurantList/RestaurantListRepository.swift\" \\\n\"${INPUT_DIR}/Utility/Connectivity.swift\" \\\n\"${INPUT_DIR}/Utility/LocationService/LocationServiceHandler.swift\"\n";
 		};
 		D6C748F02569EE3F3E884B88 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
