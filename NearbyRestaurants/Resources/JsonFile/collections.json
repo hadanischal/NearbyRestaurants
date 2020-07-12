@@ -1,0 +1,28 @@
+{
+    "collections": [{
+        "collection": {
+            "collection_id": 1,
+            "res_count": 26,
+            "image_url": "https://b.zmtcdn.com/data/collections/e1d5e8f900dbca01d11f353ef4b6a97c_1581661395.jpg",
+            "url": "https://www.zomato.com/ncr/top-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+            "title": "Trending This Week",
+            "description": "Most popular restaurants in town this week",
+            "share_url": "http://www.zoma.to/c-10699/1"
+        }
+    }, {
+        "collection": {
+            "collection_id": 339,
+            "res_count": 29,
+            "image_url": "https://b.zmtcdn.com/data/collections/67c4acc3f607dbcff71a8e1e77a70c8a_1535469199.jpg",
+            "url": "https://www.zomato.com/ncr/happy-hours?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+            "title": "Happy Hours",
+            "description": "Great deals on booze. Happy hours indeed",
+            "share_url": "http://www.zoma.to/c-10699/339"
+        }
+    }],
+    "has_more": 0,
+    "share_url": "http://www.zoma.to/c-10699",
+    "display_text": "OR EXPLORE OUR COLLECTIONS",
+    "has_total": 0,
+    "user_has_addresses": true
+}
