@@ -59,7 +59,7 @@ class MockData {
 
     func restaurantListFromCollectionsResult() -> [RestaurantListModel] {
         let restaurantList = stubCollectionsResult().map(\.collections).map { list -> [RestaurantListModel] in
-            list.map { RestaurantListModel($0.collection) }
+            list.map { RestaurantListModel($0.restaurant) }
         }
         return restaurantList ?? []
     }
