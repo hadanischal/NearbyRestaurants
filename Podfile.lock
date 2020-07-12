@@ -9,6 +9,7 @@ PODS:
   - Pecker (0.3.0)
   - PKHUD (5.3.0)
   - Quick (3.0.0)
+  - ReachabilitySwift (5.0.0)
   - RxBlocking (5.1.1):
     - RxSwift (~> 5)
   - RxCocoa (5.1.1):
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - Pecker
   - PKHUD (~> 5.0)
   - Quick (~> 3.0.0)
+  - ReachabilitySwift
   - RxBlocking (~> 5.1.1)
   - RxCocoa (~> 5.1.1)
   - RxSwift (~> 5.1.1)
@@ -44,6 +46,7 @@ SPEC REPOS:
     - Pecker
     - PKHUD
     - Quick
+    - ReachabilitySwift
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -59,6 +62,7 @@ SPEC CHECKSUMS:
   Pecker: 7e21bfee0b2d26a1f6b7f120c7c4ac675975a614
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   SwiftGen: 77e88c8609381660cc1084c5ba8e1dc6065de692
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 0b0573c1d59a8d85a2a80a9d6a4589dfaf6398f0
+PODFILE CHECKSUM: 9210666e983e49aa9ec8da5afbac7d5b30fffdbf
 
 COCOAPODS: 1.9.1

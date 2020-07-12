@@ -13,7 +13,8 @@ target 'NearbyRestaurants' do
   pod 'Pecker'
   pod 'PKHUD', '~> 5.0'
   pod 'Kingfisher', '~> 5.14.1'
-  
+  pod 'ReachabilitySwift'
+
   target 'NearbyRestaurantsTests' do
     inherit! :search_paths
     # Pods for testing
