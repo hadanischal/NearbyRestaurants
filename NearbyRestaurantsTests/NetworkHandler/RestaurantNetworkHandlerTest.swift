@@ -99,7 +99,7 @@ final class RestaurantNetworkHandlerTest: QuickSpec {
                     }
 
                     it("emits the error") {
-                        let observable = testNetworkHandler.getRestaurantResult() 
+                        let observable = testNetworkHandler.getRestaurantResult()
                         let res = testScheduler.start { observable }
 
                         expect(res.events.count).to(equal(1))

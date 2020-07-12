@@ -58,7 +58,7 @@ final class RestaurantListRepository: RestaurantListRepositoryHandling {
             }
     }
 
-//    private func getCollectionsResult(_ location: LocationModel?) -> Observable<[CollectionElement]> {
+//    private func getCollectionsResult(_ location: LocationModel?) -> Observable<[RestaurantListModel]> {
 //        self.networkHandler
 //            .getCollectionsResult(location)
 //            .compactMap { list -> [RestaurantListModel] in

@@ -20,7 +20,7 @@ extension RestaurantListModel {
         name = data.name
         url = data.url
         address = "\(data.location.address) , \(data.location.city)"
-        imageUrl = data.photosUrl // featuredImage //photosUrl
+        imageUrl = data.featuredImage // photosUrl //photosUrl
     }
 
     init(_ data: Restaurant) {

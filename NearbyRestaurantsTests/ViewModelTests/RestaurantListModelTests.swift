@@ -29,7 +29,7 @@ final class RestaurantListModelTests: QuickSpec {
                     expect(testModel.name).to(equal(restaurantModel.name))
                     expect(testModel.url).to(equal(restaurantModel.url))
                     expect(testModel.address).to(equal("\(restaurantModel.location.address) , \(restaurantModel.location.city)"))
-                    expect(testModel.imageUrl).to(equal(restaurantModel.photosUrl))
+                    expect(testModel.imageUrl).to(equal(restaurantModel.featuredImage))
                 }
             }
 

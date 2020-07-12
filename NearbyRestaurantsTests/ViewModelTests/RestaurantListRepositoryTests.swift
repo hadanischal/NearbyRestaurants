@@ -7,12 +7,12 @@
 //
 
 import Cuckoo
+@testable import NearbyRestaurants
 import Nimble
 import Quick
 import RxSwift
 import RxTest
 import XCTest
-@testable import NearbyRestaurants
 
 final class RestaurantListRepositoryTests: QuickSpec {
     override func spec() {
@@ -129,7 +129,6 @@ final class RestaurantListRepositoryTests: QuickSpec {
             }
 
             describe("test getRestaurantList with address") {
-
                 var mockRestaurantResult: [RestaurantElement]!
                 let mockLocationModel: LocationModel = LocationModel(latitude: 12, longitude: 13)
 
