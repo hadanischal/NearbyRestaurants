@@ -40,7 +40,6 @@ extension UIView {
     }
 
     func addGradient(with layer: CAGradientLayer, gradientFrame: CGRect? = nil, startEndPoints: (CGPoint, CGPoint)? = nil) {
-
         layer.frame = gradientFrame ?? self.bounds
         layer.frame.origin = .zero
 

@@ -14,7 +14,7 @@ extension UIFont {
     }
 
     class func regularFont(size: CGFloat) -> UIFont {
-        return  UIFont.systemFont(ofSize: size)
+        return UIFont.systemFont(ofSize: size)
     }
 
     class func lightFont(size: CGFloat) -> UIFont {
@@ -74,5 +74,4 @@ extension UIFont {
     static var detailBody: UIFont {
         return .lightFont(size: 16)
     }
-
 }

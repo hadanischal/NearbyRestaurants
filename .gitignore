@@ -88,9 +88,5 @@ build
 
 ### Generated ###
 
-NearbyHospitalsTests/GeneratedMocks.swift
-# */ViewController* 
-*/Repository*
-*/Generated*
-*/Resources*
-*/Views/ArtworkView*
+*/GeneratedMocks.swift
+
