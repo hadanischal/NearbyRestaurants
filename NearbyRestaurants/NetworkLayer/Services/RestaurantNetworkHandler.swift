@@ -35,8 +35,8 @@ final class RestaurantNetworkHandler: RestaurantNetworkHandling {
         guard let url = URL.searchUrl else { return Observable<[RestaurantElement]>.error(NetworkError.badURL) }
 
         var parameter = [ApiKey.count: "10",
-                         ApiKey.lat: "\(location?.latitude ?? 37.8230)",
-                         ApiKey.lon: "\(location?.longitude ?? 144.9980)"]
+                         ApiKey.lat: "\(location?.latitude ?? -37.8186391)",
+                         ApiKey.lon: "\(location?.longitude ?? 145.0014756)"]
 
         var res: Resource<RestaurantResult> { Resource(url: url, parameter: parameter) }
 
@@ -49,8 +49,8 @@ final class RestaurantNetworkHandler: RestaurantNetworkHandling {
         guard let url = URL.collectionsUrl else { return Observable<[CollectionElement]>.error(NetworkError.badURL) }
 
         var parameter = [ApiKey.count: "10",
-                         ApiKey.lat: "\(location?.latitude ?? 37.8230)",
-                         ApiKey.lon: "\(location?.longitude ?? 144.9980)",
+                         ApiKey.lat: "\(location?.latitude ?? -37.8186391)",
+                         ApiKey.lon: "\(location?.longitude ?? 145.0014756)",
                          ApiKey.sort: "rating",
                          ApiKey.radius: "1000"]
 

@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="370" height="176"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ARU-JJ-khe">
-                        <rect key="frame" x="10" y="115" width="350" height="51"/>
+                        <rect key="frame" x="10" y="111" width="350" height="51"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4O-PU-a68">
                                 <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
@@ -42,7 +42,7 @@
                     <constraint firstItem="qTP-gn-FqM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5QZ-HZ-p0X"/>
                     <constraint firstItem="ARU-JJ-khe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="D9H-iR-awN"/>
                     <constraint firstItem="qTP-gn-FqM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OLa-72-85l"/>
-                    <constraint firstAttribute="bottom" secondItem="ARU-JJ-khe" secondAttribute="bottom" constant="10" id="xKL-17-ytD"/>
+                    <constraint firstAttribute="bottom" secondItem="ARU-JJ-khe" secondAttribute="bottom" constant="14" id="xKL-17-ytD"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
@@ -59,6 +59,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="placeholder" width="134" height="94"/>
+        <image name="placeholder" width="600" height="400"/>
     </resources>
 </document>
