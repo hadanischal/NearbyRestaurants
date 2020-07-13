@@ -35,7 +35,8 @@ final class RestaurantListViewController: UITableViewController, BaseViewProtoco
         // Change UISearchBar font
         UILabel.appearance(whenContainedInInstancesOf: [UISearchBar.self]).font = UIFont.heading2
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).font = UIFont.heading2
-        self.tableView.keyboardDismissMode = .onDrag
+        tableView.keyboardDismissMode = .onDrag
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshTapped))
     }
 
     private func configureTableView() {
@@ -46,6 +47,10 @@ final class RestaurantListViewController: UITableViewController, BaseViewProtoco
         tableView.register(CustomHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "CustomHeaderFooterView")
         tableView.estimatedRowHeight = 160
         tableView.rowHeight = UITableView.automaticDimension
+    }
+
+    @objc func refreshTapped() {
+        viewModel.viewDidLoad()
     }
 
     private func setupViewModel() {
