@@ -79,6 +79,7 @@
 		AF53D57B24B9505B008FA6E5 /* .swiftformat in Resources */ = {isa = PBXBuildFile; fileRef = AF53D57624B9505B008FA6E5 /* .swiftformat */; };
 		AF53D57C24B9505B008FA6E5 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF53D57724B9505B008FA6E5 /* .swiftlint.yml */; };
 		AF53D57D24B9505B008FA6E5 /* generate-swiftgen.sh in Resources */ = {isa = PBXBuildFile; fileRef = AF53D57824B9505B008FA6E5 /* generate-swiftgen.sh */; };
+		AFDB724624BBD354000302CB /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB724524BBD354000302CB /* LocationManagerHelper.swift */; };
 		B4491AAB60853DBA195A9D4B /* Pods_NearbyRestaurants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC739F1A812606303DB4A1B /* Pods_NearbyRestaurants.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +183,7 @@
 		AF53D57624B9505B008FA6E5 /* .swiftformat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		AF53D57724B9505B008FA6E5 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AF53D57824B9505B008FA6E5 /* generate-swiftgen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "generate-swiftgen.sh"; sourceTree = "<group>"; };
+		AFDB724524BBD354000302CB /* LocationManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
 		DBBCE03DA8055877E2395FBF /* Pods-NearbyRestaurants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyRestaurants.debug.xcconfig"; path = "Target Support Files/Pods-NearbyRestaurants/Pods-NearbyRestaurants.debug.xcconfig"; sourceTree = "<group>"; };
 		DF4CC427D9A0750BF8FD5183 /* Pods-NearbyRestaurantsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyRestaurantsTests.debug.xcconfig"; path = "Target Support Files/Pods-NearbyRestaurantsTests/Pods-NearbyRestaurantsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB80BB698AEAF1924ACB904D /* Pods-NearbyRestaurants-NearbyRestaurantsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyRestaurants-NearbyRestaurantsUITests.release.xcconfig"; path = "Target Support Files/Pods-NearbyRestaurants-NearbyRestaurantsUITests/Pods-NearbyRestaurants-NearbyRestaurantsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 		AF53D4F124B94318008FA6E5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				AFDB724424BBD354000302CB /* LocationManager */,
 				AF3522C324BAA08D00D4C91E /* Connectivity.swift */,
 				AF18B5F224B99F55002B3E95 /* LocationService */,
 				AF53D4F224B94318008FA6E5 /* Extensions */,
@@ -640,6 +643,14 @@
 				AF53D57524B9505B008FA6E5 /* swiftgen.yml */,
 			);
 			name = BuildScripts;
+			sourceTree = "<group>";
+		};
+		AFDB724424BBD354000302CB /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB724524BBD354000302CB /* LocationManagerHelper.swift */,
+			);
+			path = LocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -977,6 +988,7 @@
 				AF53D54F24B94318008FA6E5 /* GeneratedColors.swift in Sources */,
 				AF53D55424B94318008FA6E5 /* WebServiceProtocol.swift in Sources */,
 				AF53D54D24B94318008FA6E5 /* StoryboardScenes.swift in Sources */,
+				AFDB724624BBD354000302CB /* LocationManagerHelper.swift in Sources */,
 				AF53D4B924B94255008FA6E5 /* ViewController.swift in Sources */,
 				AF53D53024B94318008FA6E5 /* RestaurantListViewModel.swift in Sources */,
 				AF53D53124B94318008FA6E5 /* NibLoadableView.swift in Sources */,

@@ -5,7 +5,7 @@
 //  Created by Nischal Hada on 12/7/20.
 //  Copyright © 2020 Nischal Hada. All rights reserved.
 //
-//swiftlint:disable all
+// swiftlint:disable all
 
 import CoreLocation
 import Cuckoo

@@ -38,6 +38,12 @@ final class RestaurantNetworkHandler: RestaurantNetworkHandling {
                          ApiKey.lat: "\(location?.latitude ?? -37.8186391)",
                          ApiKey.lon: "\(location?.longitude ?? 145.0014756)"]
 
+        if location == nil,
+            let location = LocationManagerHelper.sharedInstance.lastLocation {
+            parameter[ApiKey.lat] = "\(location.coordinate.latitude)"
+            parameter[ApiKey.lon] = "\(location.coordinate.longitude)"
+        }
+
         var res: Resource<RestaurantResult> { Resource(url: url, parameter: parameter) }
 
         return webService.load(resource: res)

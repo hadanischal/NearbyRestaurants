@@ -6,6 +6,7 @@
 //  Copyright © 2020 Nischal Hada. All rights reserved.
 //
 
+import CoreLocation
 import Kingfisher
 import RxCocoa
 import RxSwift
@@ -21,6 +22,7 @@ final class RestaurantListViewController: UITableViewController, BaseViewProtoco
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLocationService()
         setUpUI()
         configureTableView()
         setupViewModel()
@@ -120,4 +122,21 @@ final class RestaurantListViewController: UITableViewController, BaseViewProtoco
     }
 
     private func handellNavigation(_ indexPath: IndexPath) {}
+}
+
+// MARK: LocationServiceDelegate
+
+extension RestaurantListViewController: LocationManagerDelegate {
+    func setupLocationService() {
+        LocationManagerHelper.sharedInstance.delegate = self
+        LocationManagerHelper.sharedInstance.startUpdatingLocation()
+    }
+
+    func locationDidUpdate(_ currentLocation: CLLocation) {
+        viewModel.viewDidLoad()
+    }
+
+    func locationDidFail(_ error: Error) {
+        print("tracing Location Error : \(error)")
+    }
 }
