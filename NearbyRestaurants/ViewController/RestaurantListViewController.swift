@@ -50,34 +50,24 @@ final class RestaurantListViewController: UITableViewController, BaseViewProtoco
     }
 
     @objc func refreshTapped() {
+        searchBar.text = nil
         viewModel.viewDidLoad()
     }
 
     private func setupViewModel() {
         viewModel.updateInfo
-            .filter { $0 }
             .asDriver(onErrorJustReturn: false)
             .drive(onNext: { [weak self] _ in
-                self?.removeSpinnerView()
                 self?.tableView.reloadData()
             }).disposed(by: disposeBag)
 
         viewModel.errorResult
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] error in
-                self?.removeSpinnerView()
                 self?.showAlertView(withTitle: error.localizedDescription, andMessage: error.localizedDescription)
             }).disposed(by: disposeBag)
 
-        viewModel.isLoading
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] status in
-                if status {
-                    self?.createSpinnerView()
-                } else {
-                    self?.removeSpinnerView()
-                }
-            }).disposed(by: disposeBag)
+        viewModel.isLoading.bind(to: isAnimating).disposed(by: disposeBag)
 
         viewModel.viewDidLoad()
 

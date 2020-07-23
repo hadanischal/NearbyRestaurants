@@ -19,7 +19,6 @@
 		AF4DBE6224BAE4EB000B30F7 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = AF4DBE6024BAE4EB000B30F7 /* restaurants.json */; };
 		AF53D4B524B94255008FA6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D4B424B94255008FA6E5 /* AppDelegate.swift */; };
 		AF53D4B724B94255008FA6E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D4B624B94255008FA6E5 /* SceneDelegate.swift */; };
-		AF53D4B924B94255008FA6E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D4B824B94255008FA6E5 /* ViewController.swift */; };
 		AF53D4BC24B94255008FA6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF53D4BA24B94255008FA6E5 /* Main.storyboard */; };
 		AF53D4C124B94256008FA6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF53D4BF24B94256008FA6E5 /* LaunchScreen.storyboard */; };
 		AF53D4CC24B94256008FA6E5 /* NearbyRestaurantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53D4CB24B94256008FA6E5 /* NearbyRestaurantsTests.swift */; };
@@ -118,7 +117,6 @@
 		AF53D4B124B94255008FA6E5 /* NearbyRestaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyRestaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF53D4B424B94255008FA6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF53D4B624B94255008FA6E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF53D4B824B94255008FA6E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF53D4BB24B94255008FA6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF53D4C024B94256008FA6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF53D4C224B94256008FA6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 				AF53D4F124B94318008FA6E5 /* Utility */,
 				AF53D4B424B94255008FA6E5 /* AppDelegate.swift */,
 				AF53D4B624B94255008FA6E5 /* SceneDelegate.swift */,
-				AF53D4B824B94255008FA6E5 /* ViewController.swift */,
 				AF53D4BA24B94255008FA6E5 /* Main.storyboard */,
 				AF53D4BF24B94256008FA6E5 /* LaunchScreen.storyboard */,
 				AF53D4C224B94256008FA6E5 /* Info.plist */,
@@ -989,7 +986,6 @@
 				AF53D55424B94318008FA6E5 /* WebServiceProtocol.swift in Sources */,
 				AF53D54D24B94318008FA6E5 /* StoryboardScenes.swift in Sources */,
 				AFDB724624BBD354000302CB /* LocationManagerHelper.swift in Sources */,
-				AF53D4B924B94255008FA6E5 /* ViewController.swift in Sources */,
 				AF53D53024B94318008FA6E5 /* RestaurantListViewModel.swift in Sources */,
 				AF53D53124B94318008FA6E5 /* NibLoadableView.swift in Sources */,
 				AF53D53B24B94318008FA6E5 /* UITableView+Extensions.swift in Sources */,

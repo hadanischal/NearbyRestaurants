@@ -13,10 +13,12 @@ protocol RestaurantListDataSource: AnyObject {
     var navigationTitle: Observable<String> { get }
     var numberOfRestaurant: Int { get }
     var tableViewHeader: String { get }
+
     var updateInfo: Observable<Bool> { get }
     var errorResult: Observable<Error> { get }
     var isLoading: Observable<Bool> { get }
     func viewDidLoad()
+
     func restaurantInfo(forIndex index: Int) -> RestaurantListModel
     func searchRestaurant(withAddress address: Observable<String>)
 }
