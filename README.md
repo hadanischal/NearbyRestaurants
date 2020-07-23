@@ -1,16 +1,16 @@
 # Nearby Restaurants list App
 ## Requirements:
 * iOS 13.0+
-* Xcode 11.5
+* Xcode 11.6
 * Swift 5.2
 
 ## Objective:
-A Resturant app to demonstrate some examples of MVVM + RxSwift in Swift using **SOLID principles** code organisation, loose coupling, **unit testing** and some of the best practices used in modern iOS programming using `Swift`.
+A Restaurant app to demonstrate some aspect of clean architecture using  MVVM pattern, RxSwift, **SOLID principles** , code organisation, loose coupling, **unit testing** , Dark mode support and some of the best practices used in modern iOS programming using `Swift`.  
 
-The restaurants data of Australian cities are fetched from [Zomato API](https://developers.zomato.com/api). Please create a free API-KEY from the website if required.
+The restaurants data of Australian cities are fetched from Zomato API https://developers.zomato.com/api. Please create a free API-KEY from the website if required. 
 
 
-App Goal:
+### App Goal:
 * This project was intended to work as a Resturant search demo projects for iOS using Swift. 
 * The demo uses the [Zomato API](https://developers.zomato.com/api) since it is well-maintained API which returns information in a JSON format.
 * Use of UITableViewController to display Resturant list information.
@@ -18,7 +18,7 @@ App Goal:
 
 ## Installation
 
-- Xcode **11.5**(required)
+- Xcode **11.6**(required)
 - Clean `/DerivedData` folder if any
 - Run the pod install `pod install`
 - Run Cuckoo script to Mock your Swift objects `./Cuckoo-GeneratedMocks.sh`
