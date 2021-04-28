@@ -22,7 +22,7 @@ extension UIFont {
     }
 
     class func kittenSwashFont(size: CGFloat) -> UIFont {
-        return UIFont(font: FontFamily.KittenSwash.regular, size: size)
+        return UIFont(font: FontFamily.KittenSwash.regular, size: size) ?? boldFont(size: size)
     }
 }
 
